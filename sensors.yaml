@@ -1,0 +1,80 @@
+- name: "Working hours"
+  slave: 1
+  address: 256
+  input_type: holding
+  data_type: uint32
+  count: 2
+  device_class: duration
+  unit_of_measurement: "h"
+- name: "FAN 1 speed"
+  slave: 1
+  address: 258
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: rpm
+  count: 1
+- name: "FAN 2 speed"
+  slave: 1
+  address: 259
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: rpm
+  count: 1
+- name: "T11"
+  slave: 1
+  address: 260
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: "°C"
+  scale: 0.1
+  precision: 1
+  count: 1
+- name: "T12"
+  slave: 1
+  address: 261
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: "°C"
+  scale: 0.1
+  precision: 1
+  count: 1
+- name: "T21"
+  slave: 1
+  address: 262
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: "°C"
+  scale: 0.1
+  precision: 1
+  count: 1
+- name: "T22"
+  slave: 1
+  address: 263
+  input_type: holding
+  data_type: uint16
+  unit_of_measurement: "°C"
+  scale: 0.1
+  precision: 1
+  count: 1
+- name: "Working mode"
+  slave: 1
+  address: 512
+  input_type: input
+  data_type: uint16
+  count: 1
+  value_map:
+    0: "Off"
+    1: "3V"
+    2: "Holiday"
+    3: "Constant pressure"
+    4: "Slave"
+- name: "Selected speed"
+  slave: 1
+  address: 513
+  input_type: input
+  data_type: uint16
+  count: 1
+  value_map:
+    0: "Speed 1"
+    1: "Speed 2"
+    2: "Speed 3"

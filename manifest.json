@@ -1,0 +1,19 @@
+{
+    "domain": "aerauliqa_qr",
+    "name": "Aerauliqa QR Integration",
+    "documentation": "https://example.com",
+    "dependencies": [],
+    "codeowners": [],
+    "requirements": [],
+    "config_flow": false,
+    "translations": false,
+    "homeassistant": "2022.7.0",
+    "sensor": {
+      "name": "Aerauliqa QR Sensor",
+      "class": "AerauliqaModbusSensor",
+      "icon": "mdi:thermometer",
+      "state": true
+    },
+    "version": "0.0.1"
+}
+  
